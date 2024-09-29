@@ -33,3 +33,5 @@ def pizza_receipt():
             return  # 주문이 완료되면 함수 종료
     print("올바른 피자 이름을 입력하세요.")
     pizza_receipt()  # 올바르지 않은 경우 함수 재호출
+
+pizza_receipt()

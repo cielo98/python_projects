@@ -1,15 +1,4 @@
-# 변수 x에 정수 5를, 변수 y에 문자열 "10"을 할당하고, 이 두 변수를 더한 값을 정수로 변환하여 출력하는 코드를 작성하시오.
-x = 5
-y = "10"
-print(str(x + int(y)))
-
-# [] 안에 인덱스 입력하면 이에 해당하는 문자 출력
-s = "Hi, everyone. \n"
-s[0]
-s[-1]
-s[len(s) - 1] # 이건 뭐? -> 15-1 해서 숫자로 [] 안에 들어간다!
-print(s[-2])
-print(s[-2])
+s = "hello world and everyone in it"
 
 # 변수.startswith() 하면 변수가 특정 글자로 시작하는지
 s.startswith("g")
@@ -71,13 +60,11 @@ s[:-1]
 # capitalize() 첫 글자만 대문자로
 # count(str) 문자열에서 주어진 문자열인 str이 몇 번 나오는지
 
-# She said, "It's a beautiful day." He replied, "Yes, it is!"
-print("She said, \"Its a beautiful day.\" He replied, \"Yes, it is!\"")
-
 s = "hi everyone"
 s. replace("hi", "greetings")
 s.startswith("G")
 
+# 인코딩과 디코딩
 "test".encode()
 "파이썬".encode()
 "파이썬".encode("utf-16")
@@ -95,59 +82,3 @@ word3 = word2.encode('euc-kr')
 print(word3)
 word4 = word3.decode('euc-kr')
 print(word4)
-
-s = "Hello, World!"
-len(s)
-
-print(range(10))
-print(tuple(range(0, 10, 3)))
-a = [0, 10, True, "닐리리야"]
-len(a)
-b = [4, 7, "옹"]
-a + b
-b. index("옹")
-b.index()
-index = 1
-hello = "hello"
-hello[0]
-
-# 값 고치는 건 리스트 타입만 가능~
-b = [4, 7, "옹"]
-del b[2]
-
-a[1:1] # 아무거도 안 가져옴
-a[1:2] # 하나 가져옴
-# 참고로, 출력할 때는 값을 수정하는게 아니라 새로 생성하는 거임
-
-# 인덱스를 특정한 값만큼 증가시키면서 가져올 수도 있음
-d = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-d[2:8:3]
-
-f = (4, 6, 5)
-f[1] = 5
-
-h = "string"
-g = [1, 2, 3]
-j = (3, 5, 7)
-r = range(5, 10, 2)
-h[3]
-g[2]
-j[1]
-r[2]
-d[0:len(d)-1]
-#인덱스로 접근해서 값 바꾸는 건 안됨
-# [:7] 이런 식으로 하면 0부터
-# numpy(2, 3차원 데이터), pandas 라이브러리로 데이터 처리 가능. include numpy
-d[7::2] # 인덱스 7부터 2씩 증가시키면서 마지막 값까지 가져옴
-d[::2] # 0부터 2씩 증가, 끝까지
-d[0:len(d)-1:2] 
-d[:]
-d[4::2]
-d[:-1]
-
-len(list(r)) #콤마하고 start=1 이런 식으로 줄수도
-
-# 아래처럼 특정 범위를 하나의 값으로 바꿀수도 있음
-a = [0, 10, 20, 30, 40, 50, 60, 70, 80]
-a[4:7] = ["a"] # 첫 값만 a 적용 
-print(a)

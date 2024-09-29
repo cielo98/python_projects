@@ -35,9 +35,9 @@ def choose_character() :
 # 예 아니오
 def yes_or_no() :
     yorn = input("번호가 맞다면 y를, 틀리다면 n을 눌러주세요. : ")
-    if yorn = "y" : 
+    if yorn == "y" : 
         return main()
-    elif yorn = "n" :
+    elif yorn == "n" :
         return choose_character()
     else :
         print("y와 n 중 하나를 입력해주세요.")

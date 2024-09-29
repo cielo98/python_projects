@@ -12,20 +12,20 @@ characters = [
 
 # 캐릭터 출력
 def show_character() : 
-    for i, character in enumerate(characters, start=1) : # 첫 번째 항목부터 시작해서 리스트의 모든 항목을 반복하여 순서와 함께 출력한다. 
-        total_stat = character["attack"] + character["defense"] + character["healing"] + character["magic"] # total_stat을 정의한다.
-        print(f"{i}. {character["name"]}")
-        print(f"공격력 : {character["attack"]}")
-        print(f"방어력 : {character["defense"]}")
-        print(f"치유력 : {character["healing"]}")
-        print(f"마법력 : {character["magic"]}")
-        print(f"총 능력치 : {character[total_stat]}")
+    for i, character in enumerate(characters, start = 1) : # 첫 번째 항목부터 시작해서 리스트의 모든 항목을 반복하여 순서와 함께 출력한다. 
+        total_stat = character['attack'] + character['defense'] + character['healing'] + character['magic'] # total_stat을 정의한다.
+        print(f"{i}. {character['name']}")
+        print(f"공격력 : {character['attack']}")
+        print(f"방어력 : {character['defense']}")
+        print(f"치유력 : {character['healing']}")
+        print(f"마법력 : {character['magic']}")
+        print(f"총 능력치 : {total_stat}")
 
 
 # 캐릭터 선택 '기능'
 def choose_character() :
     choice = int(input("원하는 캐릭터의 번호를 입력하세요. : ")) 
-    if 1 =< choice =< len(characters) :
+    if 1 <= choice <= len(characters) :
             selected_character = characters[choice - 1]
             return selected_character
     else : 
